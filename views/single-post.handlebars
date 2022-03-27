@@ -1,23 +1,23 @@
-<!-- the > followed by the name of the partial file and the object we'll pass to the partial   -->
-{{> post-info post }}
+<!-- displaying articles -->
+{{> post-info post}}
 
+<!-- displaying form and comments-->
+<!-- only display if logged in -->
 {{#if loggedIn}}
 <form class="comment-form">
   <div>
-    <textarea name="comment-body"></textarea>
+    <textarea class="" name="comment-body"></textarea>
   </div>
 
   <div>
-    <button type="submit">add comment</button>
-    <button type="button" class="upvote-btn">upvote</button>
+    <button class="button" type="submit">Add Comment</button>
   </div>
+  
 </form>
 {{/if}}
 
-<!-- the > followed by the name of the partial file and the object we'll pass to the partial   -->
 {{> comments post.comments}}
 
 {{#if loggedIn}}
 <script src="/javascript/comment.js"></script>
-<script src="/javascript/upvote.js"></script>
 {{/if}}

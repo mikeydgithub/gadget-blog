@@ -1,9 +1,8 @@
-<ol class="post-list">
-  <!--#each is used to being the loop and /each to end the loop*/ -->
-  {{#each posts as |post| }}
-  <li>
-    <!-- the > followed by the name of the partial file and the object we'll pass to the partial   -->
-    {{> post-info post }}
-  </li>
-  {{/each}}
-</ol>
+{{#each posts as |post|}}
+
+{{> post-info post }}
+</div>
+
+{{else}}
+<h6 class="pb-4 has-text-centered is-italic">there are currently no posts</h6>
+{{/each}}
