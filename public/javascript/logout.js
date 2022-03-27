@@ -1,3 +1,5 @@
+// Logout logic
+
 async function logout() {
 
     // start an http request to 'logout' and because of await the asynchronous function is paused until the request completes

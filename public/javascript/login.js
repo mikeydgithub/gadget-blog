@@ -1,3 +1,4 @@
+// login handler
 async function loginFormHandler(event) {
     event.preventDefault();
   
@@ -22,7 +23,8 @@ async function loginFormHandler(event) {
       }
     }
   }
-  
+
+  // signup handler
   async function signupFormHandler(event) {
     event.preventDefault();
   
@@ -31,26 +33,25 @@ async function loginFormHandler(event) {
     const password = document.querySelector('#password-signup').value.trim();
   
     if (username && email && password) {
-      const response = await fetch('/api/users', {
-        method: 'post',
-        body: JSON.stringify({
-          username,
-          email,
-          password
-        }),
-        headers: { 'Content-Type': 'application/json' }
-      });
+    const response = await fetch('/api/users', {
+      method: 'post',
+      body: JSON.stringify({
+        username,
+        email,
+        password
+      }),
+      headers: { 'Content-Type': 'application/json' }
+    });
   
-      if (response.ok) {
-        // replace() method removes the page from the session history and navigates to the given URL
-        // redirect users to the dashboard after successful login
-        document.location.replace('/dashboard');
-      } else {
-        alert(response.statusText);
-      }
+    if (response.ok) {
+      // replace() method removes the page from the session history and navigates to the given URL
+      // redirect users to the dashboard after successful login
+      document.location.replace('/dashboard');
+    } else {
+     alert(response.statusText);
     }
   }
+}
   
-  document.querySelector('.login-form').addEventListener('submit', loginFormHandler);
-  
-  document.querySelector('.signup-form').addEventListener('submit', signupFormHandler);
+document.querySelector('.login-form').addEventListener('submit', loginFormHandler);
+document.querySelector('.signup-form').addEventListener('submit', signupFormHandler);

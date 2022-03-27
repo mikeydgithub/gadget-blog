@@ -1,6 +1,4 @@
-// On form submission, this will grab the post-title
-// and post-url values from the form and send them with 
-// a POST request to /api/posts.
+// Add post
 
 async function newFormHandler(event) {
     event.preventDefault();

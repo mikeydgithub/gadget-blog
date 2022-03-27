@@ -1,14 +1,15 @@
 const router = require('express').Router();
 const sequelize = require('../config/connection');
-const { Post, User, Comment, Vote } = require('../models');
+const { Post, User, Comment } = require('../models');
 
 // get all posts for homepage
 router.get('/', (req, res) => {
   console.log('======================');
   Post.findAll({
-    attributes: ['id','post_url','title','created_at',
-    // sequalize.literal utility function, that allows you to directly insert arbitrary content into the query without any automic escaping
-    [sequelize.literal('(SELECT COUNT(*) FROM vote WHERE post.id = vote.post_id)'), 'vote_count']
+    attributes: ['id',
+    'post_url',
+    'title',
+    'created_at'
     ],
     include: [
       {
@@ -43,7 +44,28 @@ router.get('/', (req, res) => {
     });
 });
 
-// single-post template
+// route for login session
+router.get('/login', (req, res) => {
+  if (req.session.loggedIn) {
+    res.redirect('/');
+    return;
+  }
+
+  res.render('login');
+});
+
+// route for signup session
+router.get('/signup', (req, res) => {
+  if (req.session.loggedIn) {
+    res.redirect('/');
+    return;
+  }
+
+  res.render('signup');
+});
+
+
+// get a single post by id
 router.get('/post/:id', (req, res) => {
   Post.findOne({
     where: {
@@ -51,11 +73,9 @@ router.get('/post/:id', (req, res) => {
     },
     attributes: [
       'id',
-      'post_url',
       'title',
       'created_at',
-      // sequelize.literal utility function, that allows you to directly insert arbitrary content into the query without any automatic escaping.
-      [sequelize.literal('(SELECT COUNT(*) FROM vote WHERE post.id = vote.post_id)'), 'vote_count']
+      'post_content'
     ],
     include: [
       {
@@ -63,50 +83,35 @@ router.get('/post/:id', (req, res) => {
         attributes: ['id', 'comment_text', 'post_id', 'user_id', 'created_at'],
         include: {
           model: User,
-          attributes: ['username']
+          attributes: ['username', 'twitter', 'github']
         }
       },
       {
         model: User,
-        attributes: ['username']
+        attributes: ['username', 'twitter', 'github']
       }
     ]
   })
-  .then(dbPostData => {
-    if (!dbPostData) {
-      res.status(404).json({ message: 'No post found with this id' });
-      return;
-    }
-    // serialize the data
-    const post = dbPostData.get({ plain: true });
+    .then(dbPostData => {
+      if (!dbPostData) {
+        res.status(404).json({ message: 'No post found with this id' });
+        return;
+      }
 
-    //pass data to the template
-    // The res.render() function is used to render a view and sends the rendered HTML string to the client.
-    res.render('single-post', { 
-      post,
-      loggedIn: req.session.loggedIn 
+      // serialize the data
+      const post = dbPostData.get({ plain: true });
+
+      // pass data to template
+      res.render('single-post', {
+          post,
+          loggedIn: req.session.loggedIn
+        });
+    })
+    .catch(err => {
+      console.log(err);
+      res.status(500).json(err);
     });
-  })
-  .catch(err => {
-    console.log(err);
-    res.status(500).json(err);
-  });
 });
-
-// render login handlebars
-router.get('/login', (req, res) => {
-  if (req.session.loggedIn) {
-    res.redirect('/');
-    return;
-  }
-  res.render('login');
-});
-
-// console log session vairables
-router.get('/', (req, res) => {
-  console.log(req.session);
-  //other logic
-})
 
 
 module.exports = router;
