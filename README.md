@@ -2,6 +2,15 @@
 
   Gadget Blog (For Tech Related News)
   
+  
+## User Story
+
+AS A developer who writes about tech
+
+I WANT a CMS-style blog site
+
+SO THAT I can publish articles, blog posts, and my thoughts and opinions
+  
 ## Usage
 *  GIVEN a CMS-style blog site
 *  WHEN I visit the site for the first time
@@ -46,14 +55,6 @@
  * Express-Session
  * Handlebars
  * Sequelize
-
-  ## User Story
-
-  AS A developer who writes about tech
-  
-  I WANT a CMS-style blog site
-  
-  SO THAT I can publish articles, blog posts, and my thoughts and opinions
 
   ## Description
 
