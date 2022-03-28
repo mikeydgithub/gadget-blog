@@ -1,8 +1,8 @@
 ## Gadget Blog
 ---
-> # User Story
+# User Story
 
-AS A developer who writes about tech
+> AS A developer who writes about tech
 
 I WANT a CMS-style blog site
 
