@@ -56,9 +56,9 @@ SO THAT I can publish articles, blog posts, and my thoughts and opinions
  * Handlebars
  * Sequelize
 
-  ## Description
+  ## Pictures
+  
 
-  Gadget Blog is a CMS style blog site where developers can publish their blog posts and comment on other developers’ posts as well.
 
   ## GitHub Profile
     
