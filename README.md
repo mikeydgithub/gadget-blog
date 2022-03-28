@@ -1,6 +1,6 @@
 ## Gadget Blog
 ---
-># User Story
+> # User Story
 
 AS A developer who writes about tech
 
