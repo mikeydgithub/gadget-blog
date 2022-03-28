@@ -14,23 +14,21 @@
   
   ## Usage
 
-  * Use Sequalize to interact with a MySQL database and express to build routes.
+  * 
 
-  * Make GET, POST, PUT, and DELETE requests from the database.
+  * 
+  
+  ## NPM Packages Used
+  
+ * BCrypt
+ * DotENV
+ * Express
+ * Express-Handlebars
+ * Express-Session
+ * Handlebars
+ * Sequelize
 
   ## Installation
-  
-  ### NPM Packages Used
-  
-  *bcrypt": "^5.0.1",
-    "connect-session-sequelize": "^6.1.1",
-    "dotenv": "^8.2.0",
-    "express": "^4.17.1",
-    "express-handlebars": "^6.0.3",
-    "express-session": "^1.17.0",
-    "handlebars": "^4.7.3",
-    "mysql2": "^2.1.0",
-    "sequelize": "^5.21.5"
 
   * Make sure you are in the root folder directory. In the command line type "npm install" to install all node packages.
   
