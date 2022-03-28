@@ -10,7 +10,7 @@
 
   ## Title
 
-  Retail-Pro (E-Commerce Website)
+  Gadget Blog (For Tech Related News)
   
   ## Usage
 
@@ -48,15 +48,17 @@
   
   ## User Story
 
-  AS A manager at an internet retail company
-  I WANT a back end for my e-commerce website that uses the latest technologies
-  SO THAT my company can compete with other e-commerce companies
+  AS A developer who writes about tech
+  
+  I WANT a CMS-style blog site
+  
+  SO THAT I can publish articles, blog posts, and my thoughts and opinions
 
   ## Description
 
-  Retail Pro is an E-Commerce back end development tool using packages like Sequelize to help make a database easy and convienant. 
+  Gadget Blog is a CMS style blog site where developers can publish their blog posts and comment on other developers’ posts as well.
 
-  ## GitHub Username
+  ## GitHub Profile
     
   [https:/github.com/mikeydgithub](https:/github.com/mikeydgithub)
   
