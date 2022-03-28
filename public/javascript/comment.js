@@ -3,30 +3,28 @@ async function commentFormHandler(event) {
   
     const comment_text = document.querySelector('textarea[name="comment-body"]').value.trim();
   
-    // toString() method returns a string reprensting the object
-    // split() method divides a string into an ordered list of substrings, then goes into an array, and returns the array.
     const post_id = window.location.toString().split('/')[
       window.location.toString().split('/').length - 1
     ];
   
     if (comment_text) {
         const response = await fetch('/api/comments', {
-            method: 'POST',
-            body: JSON.stringify({
+          method: 'POST',
+          body: JSON.stringify({
             post_id,
             comment_text
-            }),
-            headers: {
+          }),
+          headers: {
             'Content-Type': 'application/json'
-            }
+          }
         });
-    
+      
         if (response.ok) {
-            document.location.reload();
+          document.location.reload();
         } else {
-            alert(response.statusText);
+          alert(response.statusText);
         }
-    }
-}
+      }
+  }
   
-document.querySelector('.comment-form').addEventListener('submit', commentFormHandler);
+  document.querySelector('.comment-form').addEventListener('submit', commentFormHandler);

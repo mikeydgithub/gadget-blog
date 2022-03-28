@@ -2,34 +2,46 @@ const { User } = require('../models');
 
 const userData = [
     {
-        username: "meagan92",
-        email: "meagan_park@avenetro.ke",
-        password: "pass1234"
+        username: "martin_bour",
+        twitter: "martinb",
+        github: "martinb",
+        email: "martin_b@gmail.com",
+        password: "p@ssword1"
     },
     {
-        username: "candy92",
-        email: "candy_diaz@zytrex.voto",
-        password: "pass12345"
+        username: "matt_b",
+        twitter: "mathewb",
+        github: "mathewb",
+        email: "mathew_b@gmail.com",
+        password: "p@ssword2"
     },
     {
-        username: "vasquez94",
-        email: "vasquez_dudley@buzzmaker.pk",
-        password: "pass12346"
+        username: "shaun_c",
+        twitter: "shaun",
+        github: "shaun",
+        email: "shaun_c@gmail.com",
+        password: "p@ssword3"
     },
     {
-        username: "dunlap93",
-        email: "dunlap_james@comveyor.cards",
-        password: "pass12347"
+        username: "lee_n",
+        twitter: "leenorris",
+        github: "leenorris",
+        email: "lee_n@gmail.com",
+        password: "p@ssword4"
     },
     {
-        username: "amalia90",
-        email: "amalia_deleon@paprikut.cuisinella",
-        password: "pass12348"
+        username: "priya_r",
+        twitter: "priyaravi23",
+        github: "priyaravi23",
+        email: "priya_r@gmail.com",
+        password: "p@ssword5"
     },
     {
-        username: "chan90",
-        email: "chan_lowery@zoid.dz",
-        password: "pass12349"
+        username: "pooja",
+        twitter: "pooja_w",
+        github: "pooja",
+        email: "pooja@gmail.com",
+        password: "p@ssword6"
     }
 ]
 
