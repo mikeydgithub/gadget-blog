@@ -1,106 +1,70 @@
-## Gadget Blog
 
-# User Story
+  ## Table of Contents
+  1. [Title](#Title)
+  2. [Usage](#Usage)
+  3. [Installtion](#Installtion)
+  5. [Contribution](#Contribution)
+  6. [Tests](#Test)
+  7. [User Story](#Story)
+  8. [Description](#Description)
 
-AS A developer who writes about tech
+  ## Title
 
-I WANT a CMS-style blog site
+  Retail-Pro (E-Commerce Website)
+  
+  ## Usage
 
-SO THAT I can publish articles, blog posts, and my thoughts and opinions
+  * Use Sequalize to interact with a MySQL database and express to build routes.
 
+  * Make GET, POST, PUT, and DELETE requests from the database.
 
-# Built With
+  ## Installation
 
-* Bcrypt
-* DotENV
-* Express
-* Express-HandleBars
-* Express-Session
-* HandleBars
-* MySQL2
-* Sequelize
+  * Make sure you are in the root folder directory. In the command line type "npm install" to install all node packages.
+  
+   ![Screenshot 2022-03-19 170227](https://user-images.githubusercontent.com/94988620/159138322-6956eef5-1844-4b5a-8508-09434aacf16f.jpg)
 
-# How it works
-GIVEN a CMS-style blog site
+  * In the command line type "mysql -u root -p" to login. Follow up with your password. 
+  
+   ![Screenshot 2022-03-19 170548](https://user-images.githubusercontent.com/94988620/159138379-7f06c3b5-738c-46a6-b67b-9edc550bc930.jpg)
+  * After your password is entered type source db/schema.sql to source your schema into the database.
+  
+   ![Screenshot 2022-03-19 170651](https://user-images.githubusercontent.com/94988620/159138444-45fb1512-83ab-4f97-a5fc-7e5463fde6cb.jpg)
 
-WHEN I visit the site for the first time
-
-THEN I am presented with the homepage, which includes existing blog posts if any have been posted; navigation links for the homepage and the dashboard; and the option to log in
-
-WHEN I click on the homepage option
-
-THEN I am taken to the homepage
-
-WHEN I click on any other links in the navigation
-
-THEN I am prompted to either sign up or sign in
-
-WHEN I choose to sign up
-
-THEN I am prompted to create a username and password
-
-WHEN I click on the sign-up button
-
-THEN my user credentials are saved and I am logged into the site
-
-WHEN I revisit the site at a later time and choose to sign in
-
-THEN I am prompted to enter my username and password
-
-WHEN I am signed in to the site
-
-THEN I see navigation links for the homepage, the dashboard, and the option to log out
-
-WHEN I click on the homepage option in the navigation
-
-THEN I am taken to the homepage and presented with existing blog posts that include the post title and the date created
-
-WHEN I click on an existing blog post
-
-THEN I am presented with the post title, contents, post creator’s username, and date created for that post and have the option to leave a comment
-
-WHEN I enter a comment and click on the submit button while signed in
-
-THEN the comment is saved and the post is updated to display the comment, the comment creator’s username, and the date created
-
-WHEN I click on the dashboard option in the navigation
-
-THEN I am taken to the dashboard and presented with any blog posts I have already created and the option to add a new blog post
-
-WHEN I click on the button to add a new blog post
-
-THEN I am prompted to enter both a title and contents for my blog post
-
-WHEN I click on the button to create a new blog post
-
-THEN the title and contents of my post are saved and I am taken back to an updated dashboard with my new blog post
-
-WHEN I click on one of my existing posts in the dashboard
-
-THEN I am able to delete or update my post and taken back to an updated dashboard
-
-WHEN I click on the logout option in the navigation
-
-THEN I am signed out of the site
-
-WHEN I am idle on the site for more than a set time
-
-THEN I am able to view comments but I am prompted to log in again before I can add, update, or delete comments
+  * In the command line type "npm run seed" to seed your
+  database.
+  
+  ![Screenshot 2022-03-19 170900](https://user-images.githubusercontent.com/94988620/159138454-1181880a-e70d-48eb-8696-402885958d67.jpg)
 
 
-# Result
+  ## Tests
+  * Start by using npm start to start the server.
+   ![Screenshot 2022-03-19 171131](https://user-images.githubusercontent.com/94988620/159138525-6c1e5332-fc7a-4de4-bc16-e29e34544334.jpg)
+  
+  * Run with Insomnia or Postman and test all routes for Categories, Products, and Tags.
+  
+  ![Screenshot 2022-03-19 171401](https://user-images.githubusercontent.com/94988620/159138590-38510e8d-befb-4173-be24-60c59633084d.jpg)
 
-*
+  
+  ## User Story
 
-# Website
+  AS A manager at an internet retail company
+  I WANT a back end for my e-commerce website that uses the latest technologies
+  SO THAT my company can compete with other e-commerce companies
 
-* 
-* 
+  ## Description
 
+  Retail Pro is an E-Commerce back end development tool using packages like Sequelize to help make a database easy and convienant. 
 
+  ## GitHub Username
+    
+  [https:/github.com/mikeydgithub](https:/github.com/mikeydgithub)
+  
+  ## Contribution
 
-
-
-# Made by
-
-* Michael Diamond
+  Made by Mike Diamond
+  
+  ## Email and Contact Information
+     
+  ampgzo2@gmail.com
+  
