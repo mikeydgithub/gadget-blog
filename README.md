@@ -41,7 +41,7 @@
   
    ![Screenshot 2022-03-19 170651](https://user-images.githubusercontent.com/94988620/159138444-45fb1512-83ab-4f97-a5fc-7e5463fde6cb.jpg)
 
-  * In the command line type "npm run seed" to seed your
+  * In the command line type "npm run seeds" to seed your
   database.
   
   ![Screenshot 2022-03-19 170900](https://user-images.githubusercontent.com/94988620/159138454-1181880a-e70d-48eb-8696-402885958d67.jpg)
