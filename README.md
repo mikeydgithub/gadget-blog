@@ -57,7 +57,17 @@ SO THAT I can publish articles, blog posts, and my thoughts and opinions
  * Sequelize
 
   ## Pictures
+  ![Screenshot 2022-03-30 124931](https://user-images.githubusercontent.com/94988620/160889609-0d91a43d-7035-4027-b738-01ac16a314d5.jpg)
   
+  ![Screenshot 2022-03-30 125048](https://user-images.githubusercontent.com/94988620/160889735-39dc8bbc-545e-4396-be69-d38692245f3f.jpg)
+  
+  ![Screenshot 2022-03-30 125149](https://user-images.githubusercontent.com/94988620/160889797-6e1052ae-afa8-4427-b406-fcac1fea4532.jpg)
+  
+  ![Screenshot 2022-03-30 125208](https://user-images.githubusercontent.com/94988620/160889842-ccbe573f-185b-4bd4-b350-9ae32d0d7b30.jpg)
+  
+  ![Screenshot 2022-03-30 125238](https://user-images.githubusercontent.com/94988620/160889922-09380c85-029e-4058-8a17-ad51fa90a634.jpg)
+  
+  ![Screenshot 2022-03-30 125314](https://user-images.githubusercontent.com/94988620/160889959-69492087-326a-46f5-9764-2ebf51dfaf59.jpg)
 
 
   ## GitHub Profile
