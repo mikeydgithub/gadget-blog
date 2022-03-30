@@ -1,3 +1,3 @@
-DROP DATABASE IF EXISTS gadget_db ;
+DROP DATABASE IF EXISTS gadget_blog;
 
-CREATE DATABASE gadget_db ;
+CREATE DATABASE gadget_blog;
