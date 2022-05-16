@@ -2,6 +2,8 @@
 
   Gadget Blog (For Tech Related News)
   
+  https://gadget-blog.herokuapp.com/
+  
   
 ## User Story
 
